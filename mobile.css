@@ -1,0 +1,422 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Fira Sans', sans-serif;
+}
+body{
+    margin: 0px;
+    background-color: 	#cec5fa;
+}
+
+         /*--------Part--02-----*/
+          /*--------navbar design starts from here-----*/
+h1{
+    text-align: center;
+    font-size: 2.5rem;
+}
+h2{
+    font-size: 1.8rem;
+    text-align: center;
+    font-weight: bold;
+}
+a{
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: white;
+}
+p{
+    font-size: 1.2rem;
+    text-align: justify;
+}
+[class*='col-']{
+    float: left;
+    padding: 10px;
+}
+
+/*for mobile*/
+[class*='col']{
+    width: 100%;
+}
+.navbar{
+    background-color: 	#66669a;
+    text-align: center;
+    padding: 1% 7%;
+}
+.navbar::after{
+   content: '';
+   display: table;
+   clear: both;
+}
+.nav-logo img{
+border-radius: 40px;
+width: 100px;
+}
+.nav-heading{
+color: white;
+margin: 0;
+padding-top: 10px;
+}
+.nav-manu{
+    display: flex;
+    flex-direction: column;
+    text-transform: uppercase;
+}
+.nav-manu a{
+    background-color: 	#030056;
+    margin: 7px 0px;
+    border-radius: 10px;
+    padding: 10px;
+}
+.nav-manu a:hover{
+    background-color:	#aaa7cc;
+}
+
+        /*===Navbar design end===*/
+
+
+
+             /*--------Part--02-----*/
+        /*====profile design starts from here==*/
+        .profile{
+            padding: 130px 10px;
+            position: relative;
+            text-align: center;
+        }
+        .profile .top-weather-icon{
+            width: 150px;
+            position: absolute;
+            right: 60px;
+            top: 20px;
+            transition: transform 2s;
+        }
+        .profile .top-weather-icon:hover{
+          transform: rotate(360deg);
+        }
+        .profile-desc h1{
+            font-size: 3rem;
+            font-family: 'Satisfy', cursive;
+        }
+        .profile-desc p{
+            color: 	#8756d5;
+            margin: 0 auto 20px auto;
+            width: 90%;
+            text-align: center;
+        }
+        .profile .bottom-weather-icon{
+            width: 150px;
+            position: absolute;
+            left: 60px;
+            bottom: 10px;
+            transition: transform 2s;
+        }
+        .profile .bottom-weather-icon:hover{
+          transform: rotate(360deg);
+        }
+        .profile::after{
+            content: '';
+            clear: both;
+            display: table;
+        }
+        /*====profile design ends here=====*/
+
+                /*----parts-03==----*/
+                /*====About me design starts here===*/
+                .about-me{
+                    background-color: #66669a;
+                    padding: 1% 7%;
+                    color: white;
+                    font-family: 'Montserrat', sans-serif;
+                    text-align: center
+                }
+                .dotted-hr{
+                    width: 140px;
+                    border: 5px dotted;
+                    border-bottom: none;
+                }
+                .aboutme-image img{
+                    width: 250px;
+                    height: 250px;
+                    border: 5px solid white;
+                    border-radius: 50%;
+                }
+                .about-me p{
+                    text-align: center;
+                }
+                .about-me a{
+                    font-size: 1.2rem ;
+                }
+                .cv-button{
+                    background-color: #8756d5;
+                    color: white;
+                    text-decoration: none;
+                    border-radius: 10px;
+                    padding: 15px;
+                    font-size: 1rem;
+                    cursor: pointer;
+                    text-align: center;
+                    margin: 10px;
+                }
+                .about-me::after{
+                    content: '';
+                    clear: both;
+                    display: table;
+                }
+            
+                /*====About me design ends here===*/
+
+                /*=======parts-03=====*/
+                /*Propesonal Experience--*/
+.propesonal-experience{
+    padding: 1% 1%;
+}
+.propesonal-experience .card{
+    background-color: #75658f;
+    border-radius: 5px;
+    padding: 10px;
+    transition: 2.0s;
+    height: 700px;
+}
+.card:hover{
+    box-shadow: 0 4px 12px 15px black;
+}
+.card-icon{
+    text-align: center;
+}
+.card-icon img{
+    margin-top: 20px;
+    width: 100px;
+}
+.rounded-image{
+    border: 5px solid white;
+    border-radius: 50%;
+    padding: 10px;
+}
+.card-title h2{
+    background-color: #030056;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+.propesonal-experience::after{
+    clear: both;
+    display: table;
+    content: '';
+}
+
+
+.education-experience{
+    padding: 1% 1%;
+}
+.education-experience .card{
+    background-color: #b779a6;
+    border-radius: 5px;
+    padding: 10px;
+    transition: 2.0s;
+    height: 700px;
+}
+.education-experience::after{
+    clear: both;
+    display: table;
+    content: '';
+}
+
+       /*======Skills experience---=====*/
+
+
+.skill-experience .card{
+    background-color: #926d88;
+    border-radius: 5px;
+    padding: 10px;
+    transition: 2.0s;
+    height: 700px;
+}
+.skill-container{
+    padding-right: 45px;
+}
+.skill-container li{
+    list-style-type: none;
+    font-weight: bolder;
+    margin: 30px 10px;
+    position: relative;
+    text-transform: uppercase;
+}
+.skill-container li::before{
+    content: '';
+    position: absolute;
+    top: calc(100% + 5px);
+    left: 0;
+    width: 100%;
+    height: 10px;
+    background-color: #aaa7cc;
+    border-radius: 1000px;
+}
+.skill-container li::after{
+    content: '';
+    position: absolute;
+    top: calc(100% + 5px);
+    left: 0%;
+    width: 0%;
+    height: 10px;
+    background-color: #211c56;
+    border-radius: 1000px;
+    animation-duration: 3s;
+    animation-delay: 3s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+    animation-direction: forwards;
+    animation-iteration-count: 3;
+}
+.skill-container li.html::after{
+    animation-name: html;
+}
+@keyframes html {
+    to{
+        width: 90%;
+    }
+}
+.skill-container li.css::after{
+    animation-name: css;
+}
+@keyframes css {
+    to{
+        width: 80%;
+    }
+}
+.skill-container li.js::after{
+    animation-name: js;
+}
+@keyframes js {
+    to{
+        width: 70%;
+    }
+}
+.skill-container li.bstp::after{
+    animation-name: bootstrapt;
+}
+@keyframes bootstrapt {
+    to{
+        width: 90%;
+    }
+}
+.skill-container li.jquery::after{
+    animation-name: jquery;
+}
+@keyframes jquery {
+    to{
+        width:80%;
+    }
+}
+.skill-container li.noods-js::after{
+    animation-name: Noods-js;
+}
+@keyframes Noods-js {
+    to{
+        width: 90%;
+    }
+}
+.skill-container li.php::after{
+    animation-name: php;
+}
+@keyframes php {
+    to{
+        width: 70%;
+    }
+}
+.skill-container li.oop::after{
+    animation-name: oop;
+}
+@keyframes oop {
+    to{
+        width: 60%;
+        background-color: #1c08f5;
+    }
+}
+.skill-experience::after{
+    clear: both;
+    display: table;
+    content: '';
+}
+
+
+/*-----achievement starts here---*/
+.archivement-contact{
+    padding: 1% 7%;
+    background-color: #1811d0;
+    color: white;
+  
+}
+.contact{
+    text-align: center;
+}
+.contact input, textarea{
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+    resize: none;
+}
+.contact button{
+    background-color: #030056;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    width: 100px;
+    padding: 10px;
+    margin:10px;
+    cursor: pointer;
+}
+.contact-link{
+    text-align: center;
+}
+.media-buttons .btn{
+border: none;
+cursor: pointer;
+border-radius: 25px;
+font-size: 32px;
+padding: 5px;
+margin: 10px;
+width: 50px;
+background-color: white;
+}
+.btn:hover{
+background-color: #66669a;
+}
+.archivement-contact::after{
+    clear: both;
+    display: table;
+    content: '';
+}
+            /*-----achievement ends here---*/
+
+
+            /*--Footer starts here----*/
+.footer{
+    background-color: black;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 0.8rem;
+}
+.footer-menu a{
+    display: block;
+    margin: 15px;
+    font-size: 1rem;
+}
+.footer-menu a:hover{
+    background-color: #8756d5;
+}
+.footer-desc{
+    font-size: 1rem;
+}
+span{
+    color: red;
+    font-size: 2rem;
+}
+.footer::after{
+    display: table;
+    clear: both;
+    content: '';
+}
+             /*--Footer ends here----*/
